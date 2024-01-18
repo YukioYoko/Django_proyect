@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500&display=swap");
 :root{
     --white: #ffffff;
-    --dark: #090809 ;
+    --dark: rgba(45, 35, 33, 70);
     --primary: #E30613;
     --secundary: #B6101A;
     --Gray: #757575;
@@ -10,7 +10,7 @@
 html{
     font-size: 62.5%;
 }
-
+/*
 header {
     background: url('/static/img/Logo.png') ;
     background-repeat: no-repeat;
@@ -18,7 +18,11 @@ header {
     height: 20vh;
     margin: 0;
 }
-
+*/
+header{
+    background-color: rgba(45, 35, 33, 70);
+    margin: 0;
+}
 body{
     font-size: 16px;
     font-family: 'Noto Sans', sans-serif;
@@ -27,7 +31,7 @@ body{
 
 .bg {
     background: url('/static/img/bg_log.jpg') ; /* Establece la imagen de fondo */
-    height: 100vh; /* Ajusta la altura del encabezado al 100% del viewport height */
+    height: 92vh; /* Ajusta la altura del encabezado al 100% del viewport height */
     margin: 0;
     padding: 0;
     background-repeat: no-repeat;
@@ -80,7 +84,7 @@ body{
 
 .log_d input{
     height: 3.5rem;
-    width: 20rem;
+    width: 100%;
     font-size: 3vh;
     background-color:  rgba(56, 45, 45, 0.655);
     border: none;
@@ -104,12 +108,17 @@ body{
     height: 5rem;
     background-color: rgba(255, 255, 255, 0.773);
     border: none;
+    border-radius: .5rem;
 }
 
 #login_button:hover{
     background-color: rgba(94, 8, 8, 0.736);
     color: var(--white);
 }
+
+#login_button:active { 
+    transform: scale(0.95); 
+} 
 
 .show label{
     color: var(--white);
@@ -121,4 +130,6 @@ body{
     width: 100%;
     align-self: last baseline;
     padding-bottom: 0;
+    font-size: xx-small;
+    font-style: italic;
 }
