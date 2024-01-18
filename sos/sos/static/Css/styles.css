@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500&display=swap");
+:root{
+    --white: #ffffff;
+    --dark: #090809 ;
+    --primary: #E30613;
+    --secundary: #B6101A;
+    --Gray: #757575;
+}
+html{
+    font-size: 62.5%;
+    background-color: var(--dark);
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.title {
+    color: var(--white);
+}
+
+
+.login_container {
+    margin-top: 8%;
+    width: 50%;
+    height: 70%;
+    background-color: var(--secundary);
+    margin: 8% 30% 7% 30%;
+}
+
+.datas {   
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2rem;
+}
+
+.datas h2{
+    color: var(--white);
+    margin-top: 5%;
+}
+
+.show{
+    margin: 3%;
+}
+
+.show label{
+    color: var(--white);
+}
+
+footer{
+    color: var(--white);
+}

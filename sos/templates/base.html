@@ -1,32 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
-</head>
-<body>
-    <h1>SOS</h1>
-    <section class="log_in">
-        <div>
-            <h2>Username:</h2>
-            <input type="alpha-num" name="username" id="username">
-        </div>
-        
-        <div>
-            <h2>Password:</h2>
-            <input type="password" name="password" id="password">
-        </div>
-
-        <div>
-            <input type="checkbox" name="show_password" id="show_password" >
-            <p>Show password</p>
-        </div>
-        <div>
-            <input type="button" value="Submit" id="submit_button">
-        </div>
-    </section>
-    
-    <footer><h2>Tronfix SOS</h2></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block css %}{% endblock css%}
+    <title>Tronfix Sos</title>
+  </head>
+  <body>
+    <header>
+      <img src="/static/img/Logo.png" alt="Logo.png" />
+    </header>
+    <main>{% block content %} {% endblock content%}</main>
+    <footer>
+      <h2>Tronfix SOS</h2>
+    </footer>
+  </body>
 </html>
