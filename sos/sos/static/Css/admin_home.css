@@ -10,3 +10,53 @@
 html{
     font-size: 62.5%;
 }
+
+/* Menu de navegacion */
+.container_m {
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.container_m h2 {
+    grid-column: (1) ;
+}
+
+.container_menu{
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Estilos para los elementos del menú */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+/* Estilos para los elementos del menú desplegable */
+nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
