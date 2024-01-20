@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500&display=swap");
+:root{
+    --white: #ffffff;
+    --dark: rgba(45, 35, 33, 70);
+    --primary: #E30613;
+    --secundary: #B6101A;
+    --Gray: #757575;
+}
+
+html{
+    font-size: 62.5%;
+}
