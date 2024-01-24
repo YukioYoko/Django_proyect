@@ -4,3 +4,6 @@ from django.shortcuts import render, HttpResponse
 
 def index(request):
     return render(request, "home.html", {})
+
+def repairs(request):
+    return render(request, "repairs.html", {})

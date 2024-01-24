@@ -4,7 +4,7 @@
     --dark: rgba(45, 35, 33, 70);
     --primary: #E30613;
     --secundary: #B6101A;
-    --Gray: #757575;
+    --Gray: #5e5a5a;
     
     --ca: rgb(184,187,191) /* gris icon #B8BBBF */
 }
@@ -82,7 +82,7 @@ header{
 .dropdown{
     position: absolute;
     background-color: var(--dark);
-    width: 18%;
+    width: 19%;
     height: 60rem;
     left: 0;
     bottom: 0;
@@ -185,13 +185,16 @@ header{
         position: relative;
         right: 0;
         left: auto;
+        overflow: hidden;
+        width: 100%;
     }
     .dropdown{
+        margin-top: 10rem;
         width: 100%;
-        clip-path: var(--clip, inset(17% 0 83% 0));
+        clip-path: var(--clip, inset(0 0 100% 0));
     }
     .nav:has(.dropdown:target) {
-        --clip: inset(17% 0 0 0);
+        --clip: inset(0 0 0 0);
     
     }
 }
