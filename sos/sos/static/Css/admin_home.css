@@ -1,3 +1,6 @@
+/*////////////
+/ Admin home/
+///////////*/
 
 .container_buttons{
     margin: 3rem;
@@ -106,3 +109,7 @@
         grid-template-rows: repeat(3, 3fr);
     }
 }
+
+/*///////////////
+/ Admin repairs/
+/////////////*/
