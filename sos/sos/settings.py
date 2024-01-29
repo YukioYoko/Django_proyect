@@ -34,9 +34,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     #my Apps
-    'log_in',
-    'main',
-    'tasks',
+    'log_in.apps.LogInConfig',
+    'main.apps.MainConfig',
+    'tasks.apps.TasksConfig',
 
     #Django Apps
     'django.contrib.admin',

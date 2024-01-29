@@ -1,0 +1,77 @@
+
+{% extends 'base_barra.html' %} {% load static %} 
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static "Css/admin_home.css" %}" />  {% endblock css %}
+{% if request.user.is_authenticated %}
+{% block content %}
+
+<section class="container_buttons">
+  <div class="boton ">
+    <div class="info">
+      <div class="data">
+        <span>#</span>
+        <h2>Repairs</h2>
+      </div>
+      <a href="repairs">
+        <img src="{% static "assets/tools.svg"%}" class="button_icon">
+      </a>
+    </div>
+  
+    <div class="more_info">
+      <a href="../repairs">
+        More info
+        <img src="{% static "assets/more_info.svg"%}" class="info_icon">
+      </a>
+    </div>
+  </div>
+
+  <div class="boton ">
+    <div class="info">
+      <div class="data">
+        <span>#</span>
+        <h2>Clients</h2>
+      </div>
+      <a href="">
+        <img src="{% static "assets/clients.svg"%}" class="button_icon">
+      </a>
+    </div>
+  
+    <div class="more_info">
+      <a href="">
+        More info
+        <img src="{% static "assets/more_info.svg"%}" class="info_icon">
+      </a>
+    </div>
+  </div>
+
+  <div class="boton ">
+    <div class="info">
+      <div class="data">
+        <span>#</span>
+        <h2>Inventory</h2>
+      </div>
+      <a href="">
+        <img src="{% static "assets/projects.svg"%}" class="button_icon">
+      </a>
+    </div>
+  
+    <div class="more_info">
+      <a href="">
+        More info
+        <img src="{% static "assets/more_info.svg"%}" class="info_icon">
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="graph">
+    <h2>Example</h2>
+    <img src="{% static "img/graph.png"%}" alt="graph.png">
+  </div>
+</section>
+
+{% endblock content %}
+{% else %}
+  <li> <a href="admin_login"></a></li>
+  {% endif %}

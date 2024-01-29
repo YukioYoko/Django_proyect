@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% load static %} {% block css %} <link
+rel="stylesheet" type="text/css" href="{% static "Css/admin_login.css" %}" />
+{%endblock css %} {% block content %}
+<header>
+  <img src="{% static "img/Logo.png" %}" alt="Logo.png">
+</header>
+
+<div class="bg">
+  <div class="bg_op">
+    <div class="login_container">
+      <form method="post">
+        {% csrf_token %}
+      
+        <div class="datas">
+          <div class="log_d">
+            <h2>Username:</h2>
+            <input type="text" name="username" id="username" />
+          </div>
+
+          <div class="log_d">
+            <h2>Password:</h2>
+            <input type="password" name="password" id="password" />
+          </div>
+
+          <div class="show">
+            <input type="checkbox" name="show_password" id="show_password" />
+            <label for="show_password">Show password</label>
+          </div>
+
+          <div class="login_buttons">
+            <button type="submit"  id="login_button">Log in</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="log_footer">
+      <h3>Tronfix ®</h3>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
